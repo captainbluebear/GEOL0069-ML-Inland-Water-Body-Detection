@@ -1,1 +1,5 @@
-# GEOL0069-ML-Inland-Water-Body-Detection
+# Project Background
+---
+Inland water bodies play a critical role in global ecology and climate. Consisting of lakes, reservoirs, rivers, and ephemeral waterbodies, they play an important role in many aspects of human society, including the economy, agriculture, and our environments (ScienceDirect). However, a combination of human activity and climate change has made these bodies of water highly susceptible to change in ways that may affect society . As a result, it is of great significance that inland water bodies are rapidly and accurately monitored (ScienceDirect).
+
+Remote sensing technology has been widely used in surface water body classification due to its global scale, availability, real-time nature, and low cost (Jiang 2020). In comparison to traditional field methods, it is much less time-consuming and labour-intensive (ScienceDirect). Much research has been conducted on how satellite imagery can best be utilised for effecting water body mapping. This project adds to that research by examining how data from the Sentinel 2 satellite, launched by ESA in [enter date], can be utilised alongside machine learning algorithms to accurately detect inland water bodies.
