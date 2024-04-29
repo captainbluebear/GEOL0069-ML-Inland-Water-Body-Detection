@@ -6,8 +6,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/banner.png" alt="Banner" width="80" height="80">
+  <a href="[https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection]">
+    <img src="images/title_banner.png" alt="Banner" width="80" height="80">
   </a>
 </div>
 
