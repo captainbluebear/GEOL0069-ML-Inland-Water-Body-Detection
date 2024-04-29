@@ -26,7 +26,7 @@
       <ul>
         <li><a href="#background">Background</a></li>
         <li><a href="#the-sentinel-2-satellite">The SENTINEL-2 Satellite</a></li>
-        <li><a href="#machine-learning-methodology">Machine Learning Methodology</a></li>
+        <li><a href="#machine-learning-methodology: k-means-clustering">Machine Learning Methodology: K-Means Clustering</a></li>
       </ul>
     </li>
     <li>
@@ -69,7 +69,7 @@ Light reflecting from the Earth’s surface is captured by the sensor and focuse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Machine Learning Methodology — K-Means Clustering
+## Machine Learning Methodology: K-Means Clustering
 The algorithm used throughout this project is K-means clustering, which works by partitioning a dataset into k clusters (groups), where k is some number set by the user. The basic idea is to define k centroids and assign each data point in the dataset to its nearest centroid, in such a manner as to keep the centroids as compact as possible within their respective clusters (*Unsupervised Learning — GEOL0069 Guide Book*, n.d.).
 
 K-means is particularly well-suited for applications where the structure of the data is not known. Because K-means does not require any knowledge or input about the data, it is ideal for exploratory analysis. This makes it an ideal choice for this project.
