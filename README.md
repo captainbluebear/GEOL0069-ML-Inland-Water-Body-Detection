@@ -87,53 +87,47 @@ K-means is particularly well-suited for applications where the structure of the 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
-This project was created in Google Colaboratory, a free online 
+# Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This project was created using Google Colab, a cloud-based platform for modifying and sharing code. To get a copy of this project up and running, follow these steps:
 
-### Prerequisites and Installation
+1. Download `ML Detection of Inland Water Bodies.ipynb` from this repository to get started.
+2. Download datasets to use. See below for how to acquire datasets.
+3. Modify file paths in the Colab notebook to match the location where the dataset was saved. 
+    1. If using the same datasets as the original notebook, no other changes are necessary.
+    2. If using a different dataset, filenames will also have to be modified where they are used; simply copy the corresponding filename from your dataset and replace the one in the notebook.
+4. Run the cells of the notebook sequentially. Further instructions can be found in the notebook.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+## Datasets Used
 
-### Datasets Used
+The datasets used for this project are Sentinel-2 L2A datasets, which have been atmospherically corrected. Two areas were examined: a snapshot of an area within the Great Lakes region of North America, and a snapshot of the Ganges River Delta in South Asia. These regions were chosen for their unique geographic characteristics:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+- **The Great Lakes** - high concentration of rivers and water bodies in a relatively small area, with many being small in size. As a result, ML algorithms are challenged to be capable of fine discernment between water and land.
+- **The Ganges River Delta** - heavily sediment laden, with water appearing tan or brown in RGB satellite imagery. Research has shown that NWDI indexing struggles to detect water with a high sediment concentration, so this dataset was chosen to be more challenging to classify (Jiang et al., 2020).
+
+### Downloading Datasets
+The datasets have not been included here due to their size, but individuals interested in using the same data can visit the [Copernicus Dataspace Browser](https://browser.dataspace.copernicus.eu/) to download it. Note that a free account is required for access. To retrieve the data, visit the dataspace browser, switch to the search tab, and enter the following filenames in the search bar:
+
+- `S2B_MSIL2A_20240426T162829_N0510_R083_T16TGS_20240426T204803.SAFE` (Great Lakes region)
+- `S2A_MSIL2A_20240427T082601_N0510_R021_T36RUU_20240427T125051.SAFE` (Ganges Delta region)
+
+Download the files and unzip them in your file system.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+# Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Included below are some classification images created as a part of this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- LICENSE -->
-## License
+# License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -142,27 +136,33 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+# Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Fiona McKee - [fiona.mckee.23@ucl.ac.uk](mailto:fiona.mckee.23@ucl.ac.uk) / [mckee.c.fiona@gmail.com](mailto:mckee.c.fiona@gmail.com) / [www.linkedin.com/in/fiona-mckee](http://www.linkedin.com/in/fiona-mckee)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+# Acknowledgments
+This project was created for GEOL0069 at University College London, taught by Dr. Michel Tsamados and Weibin Chen.
 
-* []()
-* []()
-* []()
+## References
+*Instrument Payload*. (n.d.). Sentinel Online. https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2/instrument-payload
+
+Jiang, W., Ni, Y., Pang, Z., He, G., Fu, J., Lu, J., Yang, K., Long, T., & Lei, T. (2020). A NEW INDEX FOR IDENTIFYING WATER BODY FROM SENTINEL-2 SATELLITE REMOTE SENSING IMAGERY. *ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences*, *V-3–2020*, 33–38. https://doi.org/10.5194/isprs-annals-v-3-2020-33-2020
+
+*Overview*. (n.d.). Sentinel Online. https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2/overview
+
+*Satellite Description*. (n.d.). Sentinel Online. https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2/satellite-description
+
+*Unsupervised Learning — GEOL0069 Guide Book*. (n.d.). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
+
+*What is unsupervised learning? | IBM*. (n.d.). https://www.ibm.com/topics/unsupervised-learning
+
+Zeng, F., Song, C., Cao, Z., Xue, K., Lu, S., Tan, C., & Liu, K. (2023). Monitoring inland water via Sentinel satellite constellation: A review and perspective. *ISPRS Journal of Photogrammetry and Remote Sensing*, *204*, 340–361. https://doi.org/10.1016/j.isprsjprs.2023.09.011
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[banner]: images/banner.png
