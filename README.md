@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
-The goal of this project is to use machine learning to detect and extract inland water bodies from satellite imagery. We will use SENTINEL-2 data due to its high resolution. The algorithm used throughout this project is k-means classification.
+This project is a final assignment for GEOL0069 at University College London, created to explore the usage of machine learning (ML) algorithms in Earth Sciences applications. It utilises unsupervised learning to detect and extract inland water bodies from satellite imagery. SENTINEL-2 data is used due to its high resolution and suitability. The algorithm used throughout this project is k-means classification.
 
 ## Background
 Inland water bodies play a critical role in global ecology and climate. Consisting of lakes, reservoirs, rivers, and ephemeral waterbodies, they play an important role in many aspects of human society, including the economy, agriculture, and our environments. However, a combination of human activity and climate change has made these bodies of water highly susceptible to change in ways that may affect society. As a result, it is of great significance that inland water bodies are rapidly and accurately monitored (Zeng et al., 2023).
@@ -69,29 +69,24 @@ Light reflecting from the Earth’s surface is captured by the sensor and focuse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Machine Learning Methodology
+## Machine Learning Methodology — K-Means Clustering
 
 ### K-means Clustering
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+The algorithm used throughout this project is K-means clustering, which works by partitioning a dataset into k clusters (groups), where k is some number set by the user. The basic idea is to define k centroids and assign each data point in the dataset to its nearest centroid, in such a manner as to keep the centroids as compact as possible within their respective clusters (*Unsupervised Learning — GEOL0069 Guide Book*, n.d.).
+
+K-means is particularly well-suited for applications where the structure of the data is not known. Because K-means does not require any knowledge or input about the data, it is ideal for exploratory analysis. This makes it an ideal choice for this project.
+
+### Key Components of K-Means
+
+1. **Choosing K** - the number of centroids must be set before the algorithm can be applied.
+2. **Centroid Initialisation** - How the centroids are initially placed can affect the result.
+3. **Assignment** - Each data point in the dataset gets assigned to its nearest centroid based upon a calculation of squared Euclidian distance.
+4. **Update** - The centroids are recomputed to fit the data points assigned to their respective cluster.
+5. **Iterate** - The assignment and update steps are repeated until the centroids no longer move significantly, ensuring that the algorithm converges to a result.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
