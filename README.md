@@ -57,6 +57,16 @@ Inland water bodies play a critical role in global ecology and climate. Consisti
 
 Remote sensing technology has been widely used in surface water body classification due to its global scale, availability, real-time nature, and low cost (Jiang et al., 2020). In comparison to traditional field methods, it is much less time-consuming and labour-intensive (Zeng et al., 2023). Much research has been conducted on how satellite imagery can best be utilised for effecting water body mapping. This project adds to that research by examining how data from the European SENTINEL-2 satellites can be utilised alongside machine learning algorithms to accurately detect inland water bodies.
 
+### Normalized Difference Water Index (NDWI)
+
+In 1996, an index was proposed by S.K. McFeeters called the Normalized Difference Water Index (NDWI), which is expressed as follows:
+
+$$
+\text{NDWI} = \frac{\text{Green} - \text{NIR}}{\text{Green} + \text{NIR}}
+$$
+
+where Green is a band of green light, and NIR is a Near Infrared Band. The index is designed to maximise values which indicate water while minimising values representing non-water features such as soil or vegetation (Xu, 2006). Since its proposal, this index has been adopted as a general approach for identifying water in satellite imagery and is widely used. However, the NDWI fails to perform under certain conditions, including when imagery contains areas with built-up or urban land, or if the water body has high sediment levels (Xu, 2006; Jiang et al., 2020). As a result, this index will be used as a baseline measurement against which the machine learning algorithms can be compared. However, the goal is to outperform the NDWI especially in cases where it performs poorly.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## The SENTINEL-2 Satellite 
@@ -117,15 +127,6 @@ Download the files and unzip them in your file system.
 
 
 
-<!-- USAGE EXAMPLES -->
-# Usage
-
-Included below are some classification images created as a part of this project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- LICENSE -->
 # License
 
@@ -162,6 +163,8 @@ Jiang, W., Ni, Y., Pang, Z., He, G., Fu, J., Lu, J., Yang, K., Long, T., & Lei, 
 *Unsupervised Learning — GEOL0069 Guide Book*. (n.d.). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
 
 *What is unsupervised learning? | IBM*. (n.d.). https://www.ibm.com/topics/unsupervised-learning
+
+Xu, H. (2006). Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery. *International Journal of Remote Sensing*, *27*(14), 3025–3033. https://doi.org/10.1080/01431160600589179
 
 Zeng, F., Song, C., Cao, Z., Xue, K., Lu, S., Tan, C., & Liu, K. (2023). Monitoring inland water via Sentinel satellite constellation: A review and perspective. *ISPRS Journal of Photogrammetry and Remote Sensing*, *204*, 340–361. https://doi.org/10.1016/j.isprsjprs.2023.09.011
 
