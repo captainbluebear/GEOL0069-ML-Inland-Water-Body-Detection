@@ -7,11 +7,15 @@
 <br />
 <div align="center">
   <a href="[https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection]">
-    <img src="images/title_banner.png" alt="Banner" width="80" height="80">
+    <img src="images/title_banner.png" alt="Banner">
   </a>
 </div>
 
-
+<h1 align="center">Inland Water Body Detection with ML</h1>
+<p align="center">
+    Using k-means classification to analyse SENTINEL-2 satellite data for inland water bodies.
+  </p>
+<br />
 
 <!-- TABLE OF CONTENTS -->
 <details>
