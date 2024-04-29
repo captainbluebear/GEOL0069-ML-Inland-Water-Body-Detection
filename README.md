@@ -26,7 +26,7 @@
       <ul>
         <li><a href="#background">Background</a></li>
         <li><a href="#the-sentinel-2-satellite">The SENTINEL-2 Satellite</a></li>
-        <li><a href="#machine-learning-methodology: k-means-clustering">Machine Learning Methodology: K-Means Clustering</a></li>
+        <li><a href="#machine-learning-methodology-k-means-clustering">Machine Learning Methodology: K-Means Clustering</a></li>
       </ul>
     </li>
     <li>
