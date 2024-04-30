@@ -65,7 +65,7 @@ $$
 \text{NDWI} = \frac{\text{Green} - \text{NIR}}{\text{Green} + \text{NIR}}
 $$
 
-where Green is a band of green light, and NIR is a Near Infrared Band. The index is designed to maximise values which indicate water while minimising values representing non-water features such as soil or vegetation (Xu, 2006). Since its proposal, this index has been adopted as a general approach for identifying water in satellite imagery and is widely used. However, the NDWI fails to perform under certain conditions, including when imagery contains areas with built-up or urban land, or if the water body has high sediment levels (Xu, 2006; Jiang et al., 2020). As a result, this index will be used as a baseline measurement against which the machine learning algorithms can be compared. However, the goal is to outperform the NDWI especially in cases where it performs poorly.
+where Green is a band of green light, and NIR is a Near Infrared Band. The index is designed to maximise values which indicate water while minimising values representing non-water features such as soil or vegetation (Xu, 2006). Since its proposal, this index has been adopted as a general approach for identifying water in satellite imagery. However, the NDWI fails to perform under certain conditions, including when imagery contains areas with built-up or urban land or if the water body has high sediment levels (Xu, 2006; Jiang et al., 2020). As a result, this index will be used as a baseline measurement against which the machine learning algorithms can be compared. However, the goal is to outperform the NDWI especially in cases where it performs poorly.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,12 +77,18 @@ The MSI utilises a push-broom sensor to capture its data. Push-broom sensors wor
 
 Light reflecting from the Earth’s surface is captured by the sensor and focused onto two focal plane assembles, one for Visible and Near Infrared bands and one for Short Wave Infrared bands. Each focal plane assembly contains 12 detectors with strip filters mounted on top which separate the wavelengths for each of the 13 bands (*Instrument Payload*, n.d.; *Satellite Description,* n.d.).
 
+![how_sen2_works](https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection/assets/59548582/b0ee89f0-dc7c-4f6a-8d12-c1edc238c521)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 ## Machine Learning Methodology: K-Means Clustering
-The algorithm used throughout this project is K-means clustering, which works by partitioning a dataset into k clusters (groups), where k is some number set by the user. The basic idea is to define k centroids and assign each data point in the dataset to its nearest centroid, in such a manner as to keep the centroids as compact as possible within their respective clusters (*Unsupervised Learning — GEOL0069 Guide Book*, n.d.).
+The algorithm used throughout this project is K-means clustering, which works by partitioning a dataset into k clusters (groups), where k is some number set by the user. The basic idea is to define k centroids and assign each data point in the dataset to its nearest centroid in such a manner as to keep them as compact as possible within their respective clusters (*Unsupervised Learning — GEOL0069 Guide Book*, n.d.).
 
 K-means is particularly well-suited for applications where the structure of the data is not known. Because K-means does not require any knowledge or input about the data, it is ideal for exploratory analysis. This makes it an ideal choice for this project.
+
+![how_kmeans_works](https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection/assets/59548582/c7beb505-69c3-42bf-b0e3-a65138cd22f2)
 
 ### Key Components of K-Means
 
@@ -99,8 +105,7 @@ K-means is particularly well-suited for applications where the structure of the 
 <!-- GETTING STARTED -->
 # Getting Started
 
-This project was created using Google Colab, a cloud-based platform for modifying and sharing code. To get a copy of this project up and running, follow these steps:
-
+This project was created using [Google Colab]([https://colab.research.google.com/]), a cloud-based platform for modifying and sharing code. To get a copy of this project up and running, follow these steps:
 1. Download `ML Detection of Inland Water Bodies.ipynb` from this repository to get started.
 2. Download datasets to use. See below for how to acquire datasets.
 3. Modify file paths in the Colab notebook to match the location where the dataset was saved. 
