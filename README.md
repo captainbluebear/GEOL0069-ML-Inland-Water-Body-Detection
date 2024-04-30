@@ -4,12 +4,8 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="[https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection]">
-    <img src="images/title_banner.png" alt="Banner">
-  </a>
-</div>
+![title_banner](https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection/assets/59548582/0628eaf5-b414-4411-a686-281f1b359cf3)
+
 
 <h1 align="center">Inland Water Body Detection with ML</h1>
 <p align="center">
